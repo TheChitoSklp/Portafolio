@@ -1,0 +1,20 @@
+body {
+  background: url("https://4kwallpapers.com/images/wallpapers/eat-sleep-code-repeat-black-background-programmer-quotes-3840x2160-5947.jpg")
+    no-repeat;
+  background-size: cover;
+}
+.container {
+  display: grid;
+  width: 50%;
+  align-items: center;
+  background-color: rgba(255, 235, 205, 0.85);
+  border-radius: 20px;
+  padding: 30px;
+}
+.text {
+  text-align: justify;
+  line-height: 1.7;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 25px;
+}

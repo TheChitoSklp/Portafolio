@@ -1,0 +1,18 @@
+* {
+  background-color: black !important;
+}
+.nav-link {
+  margin: 10px;
+}
+#colorText {
+  color: rgb(186, 177, 177);
+}
+.transform-white {
+  transition: 0.5s linear !important;
+}
+.transform-white:hover {
+  color: #fff !important;
+  text-shadow: 0 0 15px #fff, 0 0 20px #fff;
+  box-shadow: 0 0 10px lawngreen, 0 0 15px lawngreen;
+  border-radius: 10px;
+}
