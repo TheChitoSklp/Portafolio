@@ -1,5 +1,11 @@
 * {
-  background-color: black !important;
+  background-color: rgb(17, 16, 16);
+}
+body {
+  background-color: rgb(17, 16, 16) !important;
+}
+.dropdown-menu {
+  background-color: rgb(17, 16, 16) !important;
 }
 .nav-link {
   margin: 10px;
@@ -11,8 +17,8 @@
   transition: 0.5s linear !important;
 }
 .transform-white:hover {
-  color: #fff !important;
+  color: gold !important;
   text-shadow: 0 0 15px #fff, 0 0 20px #fff;
-  box-shadow: 0 0 10px lawngreen, 0 0 15px lawngreen;
+  box-shadow: 0 0 10px rgb(252, 244, 0), 0 0 15px rgb(102, 189, 14);
   border-radius: 10px;
 }
