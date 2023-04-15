@@ -5,7 +5,7 @@ let $cambioNombre = document.getElementById("cambioNombre");
 let words = ["HTML, CSS, JS", "Boostrap, GitHub"];
 
 // Función que escribe y borra una palabra
-export function writeAndEraseWord(word) {
+function writeAndEraseWord(word) {
   // Crear un arreglo con cada letra de la palabra
   let wordArray = word.split("");
 
@@ -45,9 +45,7 @@ export function writeAndEraseWord(word) {
     }
   }, 80);
 }
-export default {
-  writeAndEraseWord,
-};
 
+writeAndEraseWord(words[0]);
 // Llamar a la función por primera vez con la primera palabra
 // writeAndEraseWord(words[0]);

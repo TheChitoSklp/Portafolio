@@ -1,0 +1,22 @@
+/* Navbar */
+nav img {
+  width: auto;
+  height: 1.5rem;
+  border-radius: 10px;
+}
+.nav-link {
+  margin: 10px;
+}
+#colorText {
+  color: rgb(186, 177, 177);
+}
+.transform-white {
+  transition: 0.5s linear !important;
+}
+.transform-white:hover {
+  color: rgb(141, 140, 135) !important;
+  text-shadow: 0 0 15px #d2d2d2, 0 0 20rgb (216, 214, 214) fff;
+  filter: drop-shadow(0 0 30px #333);
+  box-shadow: 0 0 10px rgb(213, 206, 15), 0 0 15px rgb(102, 189, 14);
+  border-radius: 10px;
+}

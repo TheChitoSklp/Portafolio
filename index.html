@@ -15,89 +15,29 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+
     <title>Portafolio JP</title>
   </head>
   <body class="containerGrid">
-    <nav class="navbar navbar-expand-lg text-light bg-dark navbarGrid">
-      <div class="container-fluid text-light bg-dark">
-        <a class="logoName" id="colorText" href="https://www.facebook.com/1chiton1/"
-          ><img class="transform-white" src="src/icons/logo.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active transform-white"
-                id="colorText"
-                aria-current="page"
-                href="#"
-                >Incio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active transform-white"
-                id="colorText"
-                aria-current="page"
-                href="./html/about.html"
-                >Acerca de</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active transform-white"
-                id="colorText"
-                aria-current="page"
-                href="#"
-                >Contacto</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                id="colorText"
-                class="nav-link dropdown-toggle transform-white"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Portafolio
-              </a>
-              <ul class="dropdown-menu bg-dark">
-                <li>
-                  <a class="dropdown-item" id="colorText" href="#">Generation proyect</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" id="colorText" href="#">Other proyect</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <nav
+      id="navIndex"
+      class="navbar navbar-expand-lg text-light bg-dark navbarGrid"
+    ></nav>
 
     <section class="infoCardGrid">
-      <h3 class="nameTitle">Juan Pablo Aviña Araiza</h3>
+      <h1 class="nameTitle">Juan Pablo Aviña Araiza</h1>
       <h4 id="cambioNombre" class="nameTitle"></h4>
       <p class="description">
-        Soy un desarrollador apasionado y polifacético, con experiencia en diversas
-        tecnologías y lenguajes de programación. Me enfoco en la creación de software de
-        alta calidad y colaboro en equipo para superar las expectativas de los clientes.
-        Si buscas alguien enfocado en soluciones con habilidades técnicas sólidas,
-        ¡contáctame!
+        Soy un desarrollador junior en busca de oportunidades para aprender y crecer en el
+        campo de la programación. He adquirido habilidades en lenguajes de programación,
+        bases de datos y herramientas de desarrollo, y estoy ansioso por aplicar estos
+        conocimientos en proyectos reales.
+      </p>
+      <p class="description">
+        Me considero un miembro colaborativo del equipo y disfruto trabajando en proyectos
+        que requieren soluciones creativas y efectivas. Estoy enfocado en mejorar mis
+        habilidades y conocimientos para convertirme en un desarrollador de software
+        altamente calificado y confiable.
       </p>
       <div class="curriculumLink">
         <a
@@ -107,11 +47,11 @@
           ><i class="bi bi-arrow-down-circle"></i> CV</a
         >
       </div>
-      <div class="glassEfect"></div>
+      <div class="glassEfect borderGlassInfo"></div>
     </section>
     <section class="imageCardGrid">
       <img class="chito" src="./src/juan.png" alt="fotoChito" />
-      <div class="glassEfect"></div>
+      <div class="glassEfect borderGlassImage"></div>
     </section>
 
     <script
@@ -124,6 +64,7 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/main.js" type="module"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/cambioPalabras.js"></script>
   </body>
 </html>
