@@ -1,11 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+Oriya:wght@400;500;600;700&display=swap");
 * {
-  background-color: rgb(17, 16, 16);
+  font-family: "Inter", sans-serif;
 }
-body {
-  background-color: rgb(17, 16, 16) !important;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(to left, rgb(0, 57, 115), rgb(229, 229, 190));
 }
-.dropdown-menu {
-  background-color: rgb(17, 16, 16) !important;
+
+/* Grid area */
+.containerGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 10% 10% auto auto 15%;
+
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navbar navbar navbar navbar navbar navbar"
+    ". . . . . ."
+    ". infoCard infoCard imageCard imageCard ."
+    ". infoCard infoCard imageCard imageCard ."
+    ". . . . . .";
+}
+
+.navbarGrid {
+  grid-area: navbar;
+}
+
+.infoCardGrid {
+  grid-area: infoCard;
+}
+
+.imageCardGrid {
+  grid-area: imageCard;
+}
+
+/* ----------------------------------------------------------- */
+/* Navbar */
+nav img {
+  width: auto;
+  height: 1.5rem;
+  border-radius: 10px;
 }
 .nav-link {
   margin: 10px;
@@ -17,8 +54,100 @@ body {
   transition: 0.5s linear !important;
 }
 .transform-white:hover {
-  color: gold !important;
-  text-shadow: 0 0 15px #fff, 0 0 20px #fff;
-  box-shadow: 0 0 10px rgb(252, 244, 0), 0 0 15px rgb(102, 189, 14);
+  color: rgb(141, 140, 135) !important;
+  text-shadow: 0 0 15px #d2d2d2, 0 0 20rgb (216, 214, 214) fff;
+  filter: drop-shadow(0 0 30px #333);
+  box-shadow: 0 0 10px rgb(213, 206, 15), 0 0 15px rgb(102, 189, 14);
   border-radius: 10px;
+}
+/* -------------------------------------------------------------- */
+/* Main */
+.infoCardGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 4rem 0.2rem 4rem 2rem;
+  position: relative;
+}
+.nameTitle {
+  height: 40px;
+}
+.description {
+  text-align: justify;
+}
+.imageCardGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+.chito {
+  border-radius: 200px;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.curriculumLink {
+  position: absolute;
+  z-index: 2;
+  bottom: 4rem;
+}
+.glassEfect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.124); /* Fondo translúcido */
+  filter: blur(5px); /* Desenfoque */
+  border-top-right-radius: 10px;
+  z-index: 0;
+}
+.footerGrid {
+  background-color: wheat;
+}
+
+/* ----------------------ANIMATIONS------------------------------- */
+/* Pulse Grow */
+@-webkit-keyframes curriculumAnimation {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes curriculumAnimation {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.curriculumAnimation {
+  color: rgb(50, 60, 56);
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.247);
+  border-radius: 20px;
+}
+.curriculumAnimation:hover,
+.curriculumAnimation:focus,
+.curriculumAnimation:active {
+  -webkit-animation-name: curriculumAnimation;
+  animation-name: curriculumAnimation;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
