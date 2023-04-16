@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap");
 
-body,
-html {
+html,
+body {
   font-family: "Montserrat", sans-serif;
-  height: 100%;
   margin: 0;
+  height: 100%;
   background: linear-gradient(to left, rgb(0, 57, 115), rgb(229, 229, 190));
 }
 
@@ -12,7 +12,7 @@ html {
 .containerGrid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 10% 10% auto auto 15%;
+  grid-template-rows: 7% 10% auto auto 15%;
 
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -36,29 +36,6 @@ html {
   grid-area: imageCard;
 }
 
-/* ----------------------------------------------------------- */
-/* Navbar */
-nav img {
-  width: auto;
-  height: 1.5rem;
-  border-radius: 10px;
-}
-.nav-link {
-  margin: 10px;
-}
-#colorText {
-  color: rgb(186, 177, 177);
-}
-.transform-white {
-  transition: 0.5s linear !important;
-}
-.transform-white:hover {
-  color: rgb(141, 140, 135) !important;
-  text-shadow: 0 0 15px #d2d2d2, 0 0 20rgb (216, 214, 214) fff;
-  filter: drop-shadow(0 0 30px #333);
-  box-shadow: 0 0 10px rgb(213, 206, 15), 0 0 15px rgb(102, 189, 14);
-  border-radius: 10px;
-}
 /* -------------------------------------------------------------- */
 /* Main */
 .infoCardGrid {
@@ -96,7 +73,7 @@ nav img {
 .curriculumLink {
   position: absolute;
   z-index: 2;
-  bottom: 1.5rem;
+  bottom: 1rem;
 }
 .glassEfect {
   position: absolute;
@@ -113,9 +90,6 @@ nav img {
 }
 .borderGlassImage {
   border-radius: 0 20px 20px 0;
-}
-.footerGrid {
-  background-color: wheat;
 }
 
 /* ----------------------ANIMATIONS------------------------------- */
@@ -140,7 +114,7 @@ nav img {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.247);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.105);
   border-radius: 20px;
 }
 .curriculumAnimation:hover,

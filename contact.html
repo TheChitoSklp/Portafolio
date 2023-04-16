@@ -10,30 +10,117 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="./styles/navBar.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
-
-    <title>Portafolio JP</title>
+    <title>Contacto</title>
   </head>
   <body class="containerGrid">
-    <nav
-      id="navBarContacto"
-      class="navbar navbar-expand-lg text-light bg-dark navbarGrid"
-    ></nav>
+    <nav id="navbar" class="navbarGrid"></nav>
+    <main class="infoCardGrid">
+      <!--Comienza el Main-->
+      <div class="container-fluid"></div>
+      <h1 class="d-flex align-items-center justify-content-center">Contacto</h1>
 
+      <div
+        class="alert alert-danger fade show"
+        style="display: none"
+        role="alert"
+        id="alertValidaciones"
+      >
+        <p id="alertValidacionesTexto"></p>
+      </div>
+      <div class="m-4 d-flex justify-content-center align-items-center">
+        <form
+          id="formSend"
+          class="needs-validation"
+          action="https://formspree.io/f/xeqwplqo"
+          method="POST"
+          novalidate
+        >
+          <div class="row g-2 justify-content-between">
+            <div class="col-md-5">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="name@example.com"
+                  value=""
+                  name="name"
+                  required
+                />
+                <label for="name">Nombre</label>
+                <div class="invalid-feedback">Nombre inválido</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="txtCorreo"
+                  placeholder="algo@mail.com"
+                  value=""
+                  name="email"
+                  required
+                />
+                <label for="email">Correo </label>
+                <div class="invalid-feedback">
+                  El correo debe contener "@" y un dominio válido, ejemplo: alguien@ejemplo.com
+                </div>
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Mensaje"
+                  id="mensaje"
+                  name="mensaje"
+                ></textarea>
+                <label for="mensaje">Mensaje</label>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row g-2">
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telefono"
+                  placeholder="##########"
+                  value=""
+                  name="telefono"
+                  required
+                />
+                <label for="telefono">Teléfono</label>
+              </div>
+              <div class="invalid-feedback">El teléfono debe contener 10 números</div>
+            </div>
+          </div>
+
+          <br />
+          <button id="btnEnviar" class="btn btn-primary btn-lg btn-block" type="submit">
+            Enviar
+          </button>
+          <button id="btnClear" class="btn btn-primary btn-lg btn-block" type="button">
+            Limpiar todo
+          </button>
+          <!-- <input class="btn btn-primary" type="submit" value="Enviar"> -->
+        </form>
+      </div>
+    </main>
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/main.js" type="module"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/validaciones.js"></script>
   </body>
 </html>
